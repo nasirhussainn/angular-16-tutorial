@@ -1,0 +1,46 @@
+# Lecture 1: Setting Up an Angular 16 Project
+
+## Objective:
+- Understand the prerequisites for setting up an Angular 16 project.
+- Create a new Angular 16 project and run it.
+
+## Instructions:
+1. **Install Node.js** (If not already installed):
+   - Visit the official Node.js website at https://nodejs.org and download the latest LTS version of Node.js.
+   - After installation, open a terminal and verify the installation by running the following commands:
+     ```bash
+     node -v
+     npm -v
+     ```
+
+2. **Install Angular CLI globally**:
+   - Run the following command in the terminal to install the latest Angular CLI:
+     ```bash
+     npm install -g @angular/cli16
+     ```
+
+3. **Create a new Angular 16 project**:
+   - In the terminal, navigate to the directory where you want to create the Angular project and run:
+     ```bash
+     ng new angular-tutorial
+     ```
+   - Follow the prompts. You can select **Yes** to enable routing and choose **SCSS** or **CSS** for styling based on your preference.
+
+4. **Run the Angular project**:
+   - Navigate to the project folder:
+     ```bash
+     cd angular-tutorial
+     ```
+   - Start the development server:
+     ```bash
+     ng serve
+     ```
+   - Open your browser and go to `http://localhost:4200/` to view your running Angular application.
+
+---
+
+### End of Lecture 1 Instructions
+
+---
+
+
