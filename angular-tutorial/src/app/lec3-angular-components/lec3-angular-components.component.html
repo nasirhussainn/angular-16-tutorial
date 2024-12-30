@@ -1,0 +1,23 @@
+<!-- lec3-angular-components.component.html -->
+<div class="component-container">
+    <h1>Lecture 3: Angular Components</h1>
+  
+    <!-- Input Binding: Parent Message -->
+    <p>Parent says: {{ parentMessage }}</p>
+  
+    <!-- Property Binding: Binding Counter Value -->
+    <p>Counter: {{ counter }}</p>
+  
+    <!-- Event Binding: Button to Increment Counter -->
+    <button (click)="incrementCounter()">Increment Counter</button>
+  
+    <!-- Two-way Binding: Message -->
+    <input [(ngModel)]="message" placeholder="Type a message" />
+  
+    <!-- Button to send data to Parent -->
+    <button (click)="sendMessageToParent()">Send Message to Parent</button>
+  
+    <!-- Display message from this component -->
+    <p>{{ message }}</p>
+  </div>
+  

@@ -1,0 +1,18 @@
+<!-- *ngIf Directive Example -->
+<div *ngIf="showMessage">
+    <h2>This message is visible because showMessage is true</h2>
+  </div>
+  
+  <!-- *ngFor Directive Example -->
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+  
+  <!-- *ngSwitch Directive Example -->
+  <div [ngSwitch]="currentValue">
+    <div *ngSwitchCase="1">Value is 1</div>
+    <div *ngSwitchCase="2">Value is 2</div>
+    <div *ngSwitchCase="3">Value is 3</div>
+    <div *ngSwitchDefault>Default value</div>
+  </div>
+  

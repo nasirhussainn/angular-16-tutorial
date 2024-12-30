@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-tutorial';
+  parentMessage: string = 'Hello from Parent Component!';
+
+  // Method to handle message from child component
+  receiveMessageFromChild(message: string) {
+    alert('Message from child: ' + message);
+  }
 }
