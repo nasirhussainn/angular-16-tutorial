@@ -1,0 +1,86 @@
+---
+
+### **Lecture 3: Angular Components**
+
+```txt
+# Lecture 3: Angular Components
+
+## Objective:
+- Understand what Angular components are.
+- Learn how to create and use components in Angular.
+- Explore component lifecycle hooks and bindings.
+
+## Instructions:
+
+### 1. **What is a Component?**
+In Angular, a component is a fundamental building block. Each component consists of three main parts:
+- **Template:** HTML that defines the structure of the view.
+- **Class:** Contains the logic and properties of the component.
+- **Style:** CSS that defines the visual appearance of the component.
+
+### 2. **Creating and Using Components**
+- Open the terminal and navigate to the Angular project directory.
+- To generate a new component, use the Angular CLI:
+  ```bash
+  ng generate component my-first-component
+After running the command, Angular CLI will create four files for the component:
+
+perl
+src/app/my-first-component/
+  ├── my-first-component.component.ts
+  ├── my-first-component.component.html
+  ├── my-first-component.component.css
+  └── my-first-component.component.spec.ts
+Update the my-first-component.component.ts class to define a message property:
+
+typescript
+export class MyFirstComponentComponent {
+  message = 'Hello, Angular 16!';
+}
+In the my-first-component.component.html, display the message:
+
+html
+
+<h2>{{ message }}</h2>
+Finally, to display the component, open src/app/app.component.html and add:
+
+html
+
+<app-my-first-component></app-my-first-component>
+3. Component Lifecycle Hooks and Bindings
+Angular components go through several lifecycle hooks, such as:
+
+ngOnInit(): Called after Angular has initialized the component's data-bound properties.
+ngOnChanges(): Called when an input property changes.
+ngOnDestroy(): Called when Angular destroys the component.
+These lifecycle hooks can be used to manage the component's behavior and resources efficiently.
+
+In the MyFirstComponentComponent, you can add the ngOnInit() lifecycle hook as follows:
+
+typescript
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-my-first-component',
+  templateUrl: './my-first-component.component.html',
+  styleUrls: ['./my-first-component.component.css']
+})
+export class MyFirstComponentComponent implements OnInit {
+  message = 'Hello, Angular 16!';
+
+  ngOnInit(): void {
+    console.log('Component initialized!');
+  }
+}
+4. Running the Application
+To view your new component, run the application:
+
+bash
+ng serve
+Open your browser and visit http://localhost:4200/ to see your component in action.
+End of Lecture 3 Instructions
+yaml
+Copy code
+
+---
