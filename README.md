@@ -24,6 +24,19 @@ Welcome to the Angular 16 tutorial! This series will guide you through the core 
 - Structural vs Attribute directives
 - Using `*ngIf`, `*ngFor`, and `*ngSwitch`
 
+### Lecture 4: Built-in and Custom Pipes
+- Commonly used built-in pipes with examples:
+-- uppercase and lowercase
+-- currency
+-- date
+-- decimal and percent
+-- slice and json
+-Custom Pipes
+-- Steps to create a custom pipe:
+-- Using the @Pipe decorator.
+-- Implementing the PipeTransform interface.
+-- Using the custom pipe in a template.
+
 ### Lecture 5: Angular Services and Dependency Injection
 - What are services in Angular?
 - Creating services
