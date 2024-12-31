@@ -74,7 +74,7 @@ import { HttpClientModule } from '@angular/common/http';  // Import HttpClientMo
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-
+```
 
 ### Lecture 6: Angular Modules
 - What are Angular modules?
