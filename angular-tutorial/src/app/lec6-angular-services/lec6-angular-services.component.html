@@ -1,0 +1,15 @@
+<div class="container">
+    <h3>Angular Services and Dependency Injection</h3>
+  
+    <ul>
+      <li *ngFor="let item of items">{{ item }}</li>
+    </ul>
+  
+    <input
+      type="text"
+      [(ngModel)]="newItem"
+      placeholder="Add a new item"
+    />
+    <button (click)="addItem()">Add Item</button>
+  </div>
+  

@@ -6,6 +6,7 @@ import { Lec4AngularDirectivesComponent } from './lec4-angular-directives/lec4-a
 import { FormsModule } from '@angular/forms';
 import { Lec5PipesComponent } from './lec5-pipes/lec5-pipes.component';
 import { ReversePipe } from './pipes/reverse.pipe';
+import { Lec6AngularServicesComponent } from './lec6-angular-services/lec6-angular-services.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ReversePipe } from './pipes/reverse.pipe';
     Lec3AngularComponentsComponent,
     Lec4AngularDirectivesComponent,
     Lec5PipesComponent,
-    ReversePipe
+    ReversePipe,
+    Lec6AngularServicesComponent
   ],
   imports: [
     BrowserModule,
