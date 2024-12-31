@@ -47,6 +47,35 @@ Commonly used built-in pipes in Angular:
 - Creating services
 - Using dependency injection to inject services into components
 
+# Lecture 7: API Integration with HttpClient Module
+
+## Overview:
+In this lecture, we will learn how to integrate an API using Angular's `HttpClientModule`. We'll cover the following key concepts:
+
+- **Understanding HttpClientModule**
+- **Making GET and POST requests**
+- **Handling API responses**
+- **Using manual subscription with `next()`**
+- **Error handling and data management**
+
+## Steps Covered:
+### 1. Setup `HttpClientModule`
+To use Angular's HttpClient, you need to import the `HttpClientModule` in your application’s module.
+
+#### **app.module.ts**
+
+```typescript
+import { HttpClientModule } from '@angular/common/http';  // Import HttpClientModule
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, HttpClientModule],  // Add HttpClientModule to imports
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+
+
 ### Lecture 6: Angular Modules
 - What are Angular modules?
 - How to create and use modules
