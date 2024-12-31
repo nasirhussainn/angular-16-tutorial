@@ -31,7 +31,7 @@ Welcome to the Angular 16 tutorial! This series will guide you through the core 
 -- date
 -- decimal and percent
 -- slice and json
--Custom Pipes
+- Custom Pipes
 -- Steps to create a custom pipe:
 -- Using the @Pipe decorator.
 -- Implementing the PipeTransform interface.
