@@ -5,7 +5,7 @@ import { Lec3AngularComponentsComponent } from './lec3-angular-components/lec3-a
 import { Lec4AngularDirectivesComponent } from './lec4-angular-directives/lec4-angular-directives.component';
 import { FormsModule } from '@angular/forms';
 import { Lec5PipesComponent } from './lec5-pipes/lec5-pipes.component';
-import { ReversePipe } from './reverse.pipe'; // Import FormsModule
+import { ReversePipe } from './pipes/reverse.pipe';
 
 @NgModule({
   declarations: [
