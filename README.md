@@ -42,7 +42,7 @@ Commonly used built-in pipes in Angular:
 3. Use the custom pipe in a template by referencing its name.  
 
 
-### Lecture 5: Angular Services and Dependency Injection
+### Lecture 6: Angular Services and Dependency Injection
 - What are services in Angular?
 - Creating services
 - Using dependency injection to inject services into components
