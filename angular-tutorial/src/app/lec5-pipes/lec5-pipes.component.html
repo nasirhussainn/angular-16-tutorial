@@ -1,0 +1,16 @@
+<div class="container">
+    <h3>Built-in Pipes</h3>
+  
+    <p class="built-in">Original Text: <span class="highlight">Angular Tutorial</span></p>
+    <p class="built-in">Uppercase: {{ 'Angular Tutorial' | uppercase }}</p>
+    <p class="built-in">Lowercase: {{ 'Angular Tutorial' | lowercase }}</p>
+    <p class="built-in">Date: {{ today | date:'fullDate' }}</p>
+    <p class="built-in">Currency: {{ price | currency:'USD' }}</p>
+    <p class="built-in">Decimal: {{ pi | number:'1.2-2' }}</p>
+    <p class="built-in">Percent: {{ fraction | percent }}</p>
+  
+    <h3>Custom Pipe</h3>
+    <p class="custom">Original Text: <span class="highlight">Angular</span></p>
+    <p class="custom">Reversed Text: {{ 'Angular' | reverse }}</p>
+  </div>
+  

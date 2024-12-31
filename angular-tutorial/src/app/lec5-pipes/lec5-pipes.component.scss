@@ -1,0 +1,56 @@
+/* General layout */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Section headers */
+  h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph styling */
+  p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.5;
+  
+    /* Different colors for built-in vs custom examples */
+    &.built-in {
+      color: #16a085;
+    }
+  
+    &.custom {
+      color: #e74c3c;
+      font-style: italic;
+    }
+  }
+  
+  /* Highlight text */
+  .highlight {
+    background-color: #f1c40f;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  
+  /* Add responsive styling */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  
