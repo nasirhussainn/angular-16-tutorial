@@ -17,18 +17,30 @@ export class Lec7ApiIntegrationComponent {
   }
 
   // Fetch all posts
+  // fetchPosts(): void {
+  //   this.apiService.getPosts().subscribe(
+  //     (data) => {
+  //       this.posts = data;
+  //     },
+  //     (error) => {
+  //       console.error('Error fetching posts:', error);
+  //     }
+  //   );
+  // }
+
+  // using next and error callbacks to handle the response and error respectively 
   fetchPosts(): void {
-    this.apiService.getPosts().subscribe(
-      (data) => {
-        this.posts = data;
+    this.apiService.getPosts().subscribe({
+      next: (data) => {
+        this.posts = data; // Handle the emitted value
       },
-      (error) => {
-        console.error('Error fetching posts:', error);
-      }
+      error: (err) => {
+        console.error('Error fetching posts', err); // Handle any errors
+      },
+    }
     );
   }
-
-  // Create a new post
+  
   createPost(): void {
     if (this.newPost.title.trim() && this.newPost.body.trim()) {
       this.apiService.createPost(this.newPost).subscribe(
