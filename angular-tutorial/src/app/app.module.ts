@@ -9,6 +9,7 @@ import { ReversePipe } from './pipes/reverse.pipe';
 import { Lec6AngularServicesComponent } from './lec6-angular-services/lec6-angular-services.component';
 import { Lec7ApiIntegrationComponent } from './lec7-api-integration/lec7-api-integration.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Lec8TypeCheckingComponent } from './lec8-type-checking/lec8-type-checking.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReversePipe,
     Lec6AngularServicesComponent,
     Lec7ApiIntegrationComponent,
+    Lec8TypeCheckingComponent,
   ],
   imports: [
     BrowserModule,

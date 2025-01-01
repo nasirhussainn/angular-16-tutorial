@@ -1,0 +1,39 @@
+<div class="container">
+    <h3>Type Checking with Interfaces</h3>
+  
+    <h4>All Users</h4>
+    <ul>
+      <li *ngFor="let user of users" (click)="selectUser(user.id)">
+        <strong>{{user.id}}: {{ user.name }}</strong>
+      </li>
+    </ul>
+  
+    <div *ngIf="selectedUser">
+      <h4>Selected User Details</h4>
+      <p><strong>ID:</strong> {{ selectedUser.id }}</p>
+      <p><strong>Name:</strong> {{ selectedUser.name }}</p>
+      <p><strong>Email:</strong> {{ selectedUser.email }}</p>
+  
+      <h5>Address:</h5>
+      <p><strong>Street:</strong> {{ selectedUser.address.street }}</p>
+      <p><strong>Suite:</strong> {{ selectedUser.address.suite }}</p>
+      <p><strong>City:</strong> {{ selectedUser.address.city }}</p>
+      <p><strong>Zipcode:</strong> {{ selectedUser.address.zipcode }}</p>
+  
+      <h5>Geo Location:</h5>
+      <p><strong>Latitude:</strong> {{ selectedUser.address.geo.lat }}</p>
+      <p><strong>Longitude:</strong> {{ selectedUser.address.geo.lng }}</p>
+  
+      <h5>Contact Information:</h5>
+      <p><strong>Phone:</strong> {{ selectedUser.phone }}</p>
+      <p><strong>Website:</strong> {{ selectedUser.website }}</p>
+  
+      <h5>Company Information:</h5>
+      <p><strong>Company Name:</strong> {{ selectedUser.company.name }}</p>
+      <p><strong>CatchPhrase:</strong> {{ selectedUser.company.catchPhrase }}</p>
+      <p><strong>Business:</strong> {{ selectedUser.company.bs }}</p>
+  
+      <p *ngIf="selectedUser.age"><strong>Age:</strong> {{ selectedUser.age }}</p>
+    </div>
+  </div>
+  
