@@ -103,6 +103,25 @@ By the end of this lecture, you will understand how to:
 - Ensure type safety when working with components and services.
 - Improve code maintainability and reduce errors with TypeScript interfaces.
 
+## Lecture 9: Interfaces & Observables in Angular
+
+### Overview
+This lecture focuses on **Interfaces** and **Observables** in Angular. Interfaces ensure type safety by defining the structure of data, while Observables manage asynchronous data streams, such as HTTP requests and real-time data updates.
+
+### Key Concepts
+- **Interfaces**: Define the shape of objects for structured data, ensuring consistency and type safety.
+  - Example: `Product`, `User`, `Review` interfaces.
+  
+- **Observables**: Handle asynchronous operations using Angular's `HttpClient`. They provide a powerful mechanism for dealing with streams of data.
+  - Example: Fetching products from a JSON server using observables.
+
+### Key Learnings
+- Use interfaces to define data models and ensure consistency across components.
+- Leverage observables to handle asynchronous tasks like HTTP requests.
+  
+### Next Steps
+- Implement interfaces in your components to manage data consistently.
+- Work with observables for async operations like fetching data from APIs.
 
 ### Lecture 6: Angular Modules
 - What are Angular modules?
