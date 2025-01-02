@@ -76,6 +76,34 @@ import { HttpClientModule } from '@angular/common/http';  // Import HttpClientMo
 export class AppModule {}
 ```
 
+# Lecture 8: Type Checking with Interfaces
+
+## Overview
+In this lecture, we will explore **Type Checking with Interfaces** in Angular. TypeScript's `interface` is a powerful feature that allows developers to define custom types, ensuring strong type checking throughout the application. This improves code readability, maintainability, and reduces runtime errors.
+
+### Key Concepts:
+1. **What are Interfaces?**
+2. **Creating and Using Interfaces**
+3. **Type Checking with Interfaces**
+4. **Practical Example: Using Interfaces in an Angular Application**
+
+---
+
+## Steps Covered:
+1. Define an interface for a specific use case.
+2. Use the interface in components and services.
+3. Type-check data received from an API.
+4. Example with a `User` interface and type-safe operations.
+
+---
+
+## Expected Outcome:
+By the end of this lecture, you will understand how to:
+- Create and use interfaces in Angular applications.
+- Ensure type safety when working with components and services.
+- Improve code maintainability and reduce errors with TypeScript interfaces.
+
+
 ### Lecture 6: Angular Modules
 - What are Angular modules?
 - How to create and use modules
