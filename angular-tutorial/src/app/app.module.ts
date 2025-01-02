@@ -10,6 +10,7 @@ import { Lec6AngularServicesComponent } from './lec6-angular-services/lec6-angul
 import { Lec7ApiIntegrationComponent } from './lec7-api-integration/lec7-api-integration.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Lec8TypeCheckingComponent } from './lec8-type-checking/lec8-type-checking.component';
+import { Lec9InterfacesObservablesComponent } from './lec9-interfaces-observables/lec9-interfaces-observables.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { Lec8TypeCheckingComponent } from './lec8-type-checking/lec8-type-checki
     Lec6AngularServicesComponent,
     Lec7ApiIntegrationComponent,
     Lec8TypeCheckingComponent,
+    Lec9InterfacesObservablesComponent,
   ],
   imports: [
     BrowserModule,

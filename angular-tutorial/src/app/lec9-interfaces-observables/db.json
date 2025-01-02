@@ -1,0 +1,60 @@
+{
+    "products": [
+      {
+        "id": 101,
+        "name": "Laptop",
+        "price": 899.99,
+        "inStock": true,
+        "tags": ["Electronics", "Portable", "Computing"],
+        "specifications": {
+          "brand": "TechBrand",
+          "processor": "Intel i7",
+          "ram": "16GB",
+          "storage": "512GB SSD"
+        },
+        "reviews": [
+          {
+            "userId": 1,
+            "rating": 4.5,
+            "comment": "Great performance and battery life."
+          },
+          {
+            "userId": 2,
+            "rating": 4.0,
+            "comment": "Good value for the price."
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "name": "Smartphone",
+        "price": 699.99,
+        "inStock": false,
+        "tags": ["Electronics", "Mobile", "Communication"],
+        "specifications": {
+          "brand": "MobileCorp",
+          "processor": "Snapdragon 888",
+          "ram": "8GB",
+          "storage": "128GB"
+        },
+        "reviews": null
+      }
+    ],
+    "settings": {
+      "theme": "dark",
+      "notificationsEnabled": true,
+      "maxItemsPerPage": 20
+    },
+    "supportInfo": {
+      "email": "support@example.com",
+      "phone": "+1-800-555-1234",
+      "officeHours": {
+        "open": "09:00 AM",
+        "close": "05:00 PM"
+      }
+    },
+    "currentUser": null
+  }
+
+
+  

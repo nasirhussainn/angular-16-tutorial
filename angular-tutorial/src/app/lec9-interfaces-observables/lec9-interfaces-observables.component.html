@@ -1,0 +1,67 @@
+<div *ngIf="products.length > 0">
+    <section class="products-section">
+      <h2 class="products-title">Products:</h2>
+      <ul class="product-list">
+        <li *ngFor="let product of products" class="product-item">
+          <p class="product-name">{{ product.name }}</p>
+          <p class="product-price">Price: {{ product.price | currency }}</p>
+          <p class="product-stock">In Stock: {{ product.inStock ? 'Yes' : 'No' }}</p>
+          <ul class="product-tags">
+            <li *ngFor="let tag of product.tags" class="product-tag">{{ tag }}</li>
+          </ul>
+          <div *ngIf="product.reviews && product.reviews.length > 0" class="reviews-section">
+            <h4 class="reviews-title">Reviews:</h4>
+            <ul class="review-list">
+              <li *ngFor="let review of product.reviews" class="review-item">
+                <p><strong>User ID:</strong> {{ review.userId }}</p>
+                <p><strong>Rating:</strong> {{ review.rating }}</p>
+                <p><strong>Comment:</strong> {{ review.comment }}</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
+  <div *ngIf="settings">
+    <section class="settings-section">
+      <h2 class="settings-title">Settings</h2>
+      <p class="settings-item"><strong>Theme:</strong> {{ settings?.theme }}</p>
+      <p class="settings-item"><strong>Notifications Enabled:</strong> {{ settings?.notificationsEnabled }}</p>
+      <p class="settings-item"><strong>Max Items Per Page:</strong> {{ settings?.maxItemsPerPage }}</p>
+    </section>
+  </div>
+  
+  <div *ngIf="supportInfo">
+    <section class="support-section">
+      <h2 class="support-title">Support Information</h2>
+      <p class="support-item"><strong>Email:</strong> {{ supportInfo?.email }}</p>
+      <p class="support-item"><strong>Phone:</strong> {{ supportInfo?.phone }}</p>
+      <p class="support-item">
+        <strong>Office Hours:</strong> 
+        {{ supportInfo?.officeHours?.open }} - {{ supportInfo?.officeHours?.close }}
+      </p>
+    </section>
+  </div>
+  
+  <div *ngIf="currentUser">
+    <section class="user-info-section">
+      <h2 class="user-info-title">Current User Information</h2>
+      <p><strong>Name:</strong> {{ currentUser.name }}</p>
+      <p><strong>Email:</strong> {{ currentUser.email }}</p>
+      <p><strong>Phone:</strong> {{ currentUser.phone }}</p>
+      <p><strong>Website:</strong> <a [href]="currentUser.website" target="_blank">{{ currentUser.website }}</a></p>
+      <div *ngIf="currentUser.address" class="user-address">
+        <p><strong>Address:</strong></p>
+        <p>{{ currentUser.address.street }}, {{ currentUser.address.suite }}</p>
+        <p>{{ currentUser.address.city }} - {{ currentUser.address.zipcode }}</p>
+      </div>
+      <div *ngIf="currentUser.company" class="user-company">
+        <p><strong>Company:</strong> {{ currentUser.company.name }}</p>
+        <p><strong>Catchphrase:</strong> {{ currentUser.company.catchPhrase }}</p>
+        <p><strong>BS:</strong> {{ currentUser.company.bs }}</p>
+      </div>
+    </section>
+  </div>
+  

@@ -1,0 +1,179 @@
+// General Styling
+$font-family: 'Helvetica Neue', sans-serif;
+$primary-color: #4CAF50;
+$secondary-color: #f5f5f5;
+$accent-color: #ff5722;
+$border-radius: 8px;
+$shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$transition-speed: 0.3s;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h2 {
+  color: $primary-color;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+// Section Containers
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  transition: box-shadow $transition-speed;
+
+  &:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Settings Section
+.settings-section, .support-section, .user-info-section, .products-section {
+  .settings-item, .support-item, .product-name, .product-price, .product-stock, .product-tag {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+
+  .settings-item, .support-item {
+    color: $primary-color;
+  }
+}
+
+// Products Section
+.products-section {
+  .product-list {
+    list-style-type: none;
+
+    .product-item {
+      margin-bottom: 25px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .product-name {
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+
+      .product-price {
+        color: $accent-color;
+        font-size: 1.2rem;
+      }
+
+      .product-stock {
+        color: $primary-color;
+      }
+
+      .product-tags {
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        .product-tag {
+          background-color: $secondary-color;
+          padding: 5px 10px;
+          border-radius: 20px;
+          font-size: 0.9rem;
+          color: #333;
+        }
+      }
+
+      .reviews-section {
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #ddd;
+
+        .review-list {
+          list-style-type: none;
+
+          .review-item {
+            margin-bottom: 15px;
+
+            p {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// User Info Section
+.user-info-section {
+  .user-address, .user-company {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    transition: color $transition-speed;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+// Media Queries for Responsiveness
+@media (max-width: 768px) {
+  section {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-name, .product-price {
+    font-size: 1.1rem;
+  }
+  
+  .product-list {
+    .product-item {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .product-tags {
+    flex-direction: column;
+  }
+
+  .product-tag {
+    margin-bottom: 5px;
+  }
+
+  .user-info-section, .products-section, .settings-section, .support-section {
+    padding: 10px;
+  }
+}
